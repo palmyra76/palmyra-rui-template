@@ -80,5 +80,5 @@ function SaveForm(props: IFormEditInput) {
         </div >
     );
 }
-export default SaveForm;
 
+export { SaveForm };

@@ -82,6 +82,8 @@ function NewForm(props: IDrawerNewInput) {
             }
         }
     };
+
+    
     return (
         <div className='palmyra-dialog-form-container'>
             <div className='palmyra-dialog-form-header-container'>
@@ -107,7 +109,7 @@ function NewForm(props: IDrawerNewInput) {
                         Cancel
                     </Button>
                     <Button disabled={!isValid}
-                        className={!isValid ? 'disabled-button save-new-btn' : 'filled-button save-new-btn'}
+                        className={!isValid ? 'disabled-button' : 'filled-button'}
                         onClick={() => saveForm('new')}>
                         <Done className="button-icon" />
                         <u style={{ width: '5px' }}>S</u>ave
@@ -117,4 +119,5 @@ function NewForm(props: IDrawerNewInput) {
         </div >
     );
 }
-export default NewForm;
+
+export { NewForm };

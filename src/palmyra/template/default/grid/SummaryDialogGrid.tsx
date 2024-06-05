@@ -1,10 +1,10 @@
 import { PalmyraGrid, topic } from "palmyra-rui";
 import { ISummaryGridInput } from "../../Types";
 import { FC, useEffect, useRef, useState } from "react";
-import NewForm from "../drawer/NewForm";
-import EditForm from "../drawer/EditForm";
+import { NewForm } from "../drawer/NewForm";
+import { EditForm } from "../drawer/EditForm";
 import { Dialog } from '@mui/material';
-import GridDialog from "../dialog/GridDialog";
+import { GridDialog } from "../dialog/GridDialog";
 
 interface IFormletInput {
     formData: any
@@ -48,7 +48,6 @@ function SummaryDialogGrid(props: IDialogGridInput) {
 
     const [data, setData] = useState<any>({});
     const [dialogOpen, setDialogOpen] = useState<boolean>(false);
-    // const drawerWidth = WidthConfig.drawerWidth.width;
     const referenceCount = useRef<number>(0);
 
     const Child = props.Child;
@@ -142,4 +141,4 @@ function SummaryDialogGrid(props: IDialogGridInput) {
 }
 
 export type { IFormletInput }
-export default SummaryDialogGrid;
+export { SummaryDialogGrid };

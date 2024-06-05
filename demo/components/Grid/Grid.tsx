@@ -1,4 +1,4 @@
-import SummaryGrid from "../../../src/palmyra/template/default/grid/SummaryGrid.tsx";
+import { SummaryGrid } from "../../../src/palmyra/template/default/grid/SummaryGrid.tsx";
 import { ColumnDefinition } from "palmyra-rui";
 import storeFactory from "../Wire/StoreFactory";
 

@@ -105,4 +105,5 @@ function SaveForm(props: IDrawerEditInput) {
         </div>
     );
 }
-export default SaveForm;
+
+export { SaveForm };

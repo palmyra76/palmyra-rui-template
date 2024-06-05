@@ -1,4 +1,4 @@
-import ViewForm from "../../../src/palmyra/template/default/form/ViewForm";
+import { ViewForm } from "../../../src/palmyra/template/default/form/ViewForm";
 import { MuiTextField } from "palmyra-rui";
 import { useParams } from "react-router-dom";
 import storeFactory from "../Wire/StoreFactory";

@@ -4,7 +4,7 @@ import { FC, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IFormletInput } from "./SummaryDialogGrid";
 import { Dialog } from '@mui/material';
-import NewForm from "../dialog/NewForm";
+import { NewForm } from "../dialog/NewForm";
 
 interface EditGridProps extends ISummaryGridInput {
     dialog?: boolean,
@@ -95,7 +95,7 @@ function SummaryEditGrid(props: EditGridProps) {
                 actions={actionOptions} ref={gridRef}
                 endPoint={props.options.endPoint} customizer={props.customizer}
                 pagination={props.pagination} title={props.title}
-                layoutParams={{}} storeFactory={storeFactory} densityOption={props.densityOptions}/>
+                layoutParams={{}} storeFactory={storeFactory} densityOption={props.densityOptions} />
 
             {isNewDialogOpen &&
                 <Dialog className="grid-dialog"
@@ -114,4 +114,4 @@ function SummaryEditGrid(props: EditGridProps) {
         </div>
     );
 }
-export default SummaryEditGrid;
+export { SummaryEditGrid };

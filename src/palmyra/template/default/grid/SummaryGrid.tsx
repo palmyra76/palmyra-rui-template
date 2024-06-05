@@ -74,4 +74,4 @@ function SummaryGrid(props: IGridInput) {
         </div>
     );
 }
-export default SummaryGrid;
+export { SummaryGrid };

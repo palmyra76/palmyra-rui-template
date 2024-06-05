@@ -107,4 +107,5 @@ function EditForm(props: IDrawerEditInput) {
         </div>
     );
 }
-export default EditForm;
+
+export { EditForm };

@@ -1,4 +1,4 @@
-import NewForm from "../../../src/palmyra/template/default/form/NewForm";
+import { NewForm } from "../../../src/palmyra/template/default/form/NewForm";
 import { MuiTextField } from "palmyra-rui";
 import storeFactory from "../Wire/StoreFactory";
 

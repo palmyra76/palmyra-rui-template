@@ -55,6 +55,8 @@ function NewForm(props: IFormNewInput) {
             }
         }
     };
+
+    
     return (
         <div className='form-container'>
             <form onKeyDown={handleKeyPress}>
@@ -71,7 +73,7 @@ function NewForm(props: IFormNewInput) {
                             className={!isValid ? 'disabled-button' : 'filled-button'}
                             disableRipple onClick={saveFormData}>
                             <Done className="button-icon" />
-                            <u style={{width:'5px'}}>S</u>ave
+                            <u style={{ width: '5px' }}>S</u>ave
                         </Button>
                     </div>
                 </div>
@@ -83,5 +85,5 @@ function NewForm(props: IFormNewInput) {
         </div>
     );
 }
-export default NewForm;
 
+export { NewForm };

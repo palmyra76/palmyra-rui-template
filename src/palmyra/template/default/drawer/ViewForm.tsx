@@ -50,5 +50,4 @@ function ViewForm(props: IFormViewInput) {
         </div>
     );
 }
-export default ViewForm;
-
+export { ViewForm };

@@ -82,6 +82,8 @@ function NewForm(props: IDrawerNewInput) {
             }
         }
     };
+
+    
     return (
         <div className='drawer-form-container'>
             <div className='drawer-form-header-container'>
@@ -103,13 +105,13 @@ function NewForm(props: IDrawerNewInput) {
                         Cancel
                     </Button>
                     <Button disabled={!isValid}
-                        className={!isValid ? 'disabled-button save-new-btn' : 'filled-button save-new-btn'}
+                        className={!isValid ? 'disabled-button' : 'filled-button'}
                         onClick={() => saveForm('new')}>
                         <Done className="button-icon" />
                         <u style={{ width: '5px' }}>S</u>ave & New
                     </Button>
                     <Button disabled={!isValid}
-                        className={!isValid ? 'disabled-button save-close-btn' : 'filled-button save-close-btn'}
+                        className={!isValid ? 'disabled-button' : 'filled-button'}
                         onClick={() => saveForm('close')}>
                         <Done className="button-icon" />
                         <u style={{ width: '5px' }}>S</u>ave & Close
@@ -119,4 +121,5 @@ function NewForm(props: IDrawerNewInput) {
         </div>
     );
 }
-export default NewForm;
+
+export { NewForm };

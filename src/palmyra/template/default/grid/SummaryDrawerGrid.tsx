@@ -2,8 +2,8 @@ import { PalmyraGrid, topic } from "palmyra-rui";
 import { ISummaryGridInput } from "../../Types";
 import { FC, useEffect, useRef, useState } from "react";
 import { Drawer } from '@mui/material';
-import NewForm from "../drawer/NewForm";
-import EditForm from "../drawer/EditForm";
+import { NewForm } from "../drawer/NewForm";
+import { EditForm } from "../drawer/EditForm";
 
 interface IFormletInput {
     formData: any
@@ -119,4 +119,4 @@ function SummaryDrawerGrid(props: IDrawerGridInput) {
 }
 
 export type { IFormletInput }
-export default SummaryDrawerGrid;
+export { SummaryDrawerGrid };

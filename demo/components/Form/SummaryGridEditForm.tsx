@@ -1,4 +1,4 @@
-import EditForm from "../../../src/palmyra/template/default/form/EditForm";
+import { EditForm } from "../../../src/palmyra/template/default/form/EditForm";
 import { MuiTextField } from "palmyra-rui";
 import { useParams } from "react-router-dom";
 import storeFactory from "../Wire/StoreFactory";

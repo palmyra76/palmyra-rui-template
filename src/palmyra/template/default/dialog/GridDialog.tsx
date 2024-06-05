@@ -13,6 +13,7 @@ const GridDialog = (props: DialogGridInput) => {
     const dialogTitle = props.dialogeTitle;
 
     const ChildPorps = { ...childProps, onClose };
+
     return (
         <div>
             <div className='grid-dialog-header-container'>
@@ -30,4 +31,4 @@ const GridDialog = (props: DialogGridInput) => {
     )
 }
 
-export default GridDialog
+export { GridDialog }

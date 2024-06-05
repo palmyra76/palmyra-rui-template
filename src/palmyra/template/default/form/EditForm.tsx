@@ -80,5 +80,5 @@ function EditForm(props: IFormEditInput) {
         </div >
     );
 }
-export default EditForm;
 
+export { EditForm };

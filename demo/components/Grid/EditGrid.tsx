@@ -1,4 +1,4 @@
-import SummaryEditGrid from "../../../src/palmyra/template/default/grid/SummaryEditGrid";
+import { SummaryEditGrid } from "../../../src/palmyra/template/default/grid/SummaryEditGrid";
 import { ColumnDefinition } from "palmyra-rui";
 import storeFactory from "../Wire/StoreFactory";
 

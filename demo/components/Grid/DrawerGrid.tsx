@@ -1,4 +1,4 @@
-import SummaryDrawerGrid from "../../../src/palmyra/template/default/grid/SummaryDrawerGrid";
+import { SummaryDrawerGrid } from "../../../src/palmyra/template/default/grid/SummaryDrawerGrid";
 import { ColumnDefinition, FieldGroupContainer, MuiTextField } from "palmyra-rui";
 import storeFactory from "../Wire/StoreFactory";
 
