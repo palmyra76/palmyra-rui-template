@@ -100,5 +100,5 @@ function MenuForm(props: input) {
         </div >
     );
 }
-export default MenuForm;
 
+export { MenuForm };

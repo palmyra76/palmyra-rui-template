@@ -1734,5 +1734,5 @@ function Hn(e) {
   ] }) });
 }
 export {
-  Hn as default
+  Hn as MenuForm
 };
